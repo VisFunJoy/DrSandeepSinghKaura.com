@@ -1,0 +1,43 @@
+@import "Global.css";
+
+.carousel-inner
+{
+    width: 70%;
+    left: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 500px;
+    border: 1px solid black;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon
+{
+   width: 30px;
+   height: 30px;
+}
+
+.carousel-control-prev, .carousel-control-next
+{
+   background-color: var(--app_color3);
+   width: 10%;
+   height: 40%;
+   margin-top: 12%;
+}
+
+.news-section
+{
+   border-top: 4px solid var(--app_color2);
+   border-bottom: 4px solid var(--app_color2);
+}
+
+.single-news
+{
+   /* border: 2px solid var(--app_color1); */
+   margin: 30px;
+}
+
+.single-news a
+{
+   color: var(--app_color1);
+}
+
