@@ -21,11 +21,13 @@ class Main extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('Home');
+      $data = array();
+		$this->load->view('Home', $data);
    }
    
    public function about()
 	{
-		$this->load->view('About');
+      $data = array();
+		$this->load->view('About', $data);
 	}
 }

@@ -1,5 +1,7 @@
 @import "Global.css";
 
+/* Main View Css */
+
 .carousel-inner
 {
     width: 70%;
@@ -41,3 +43,10 @@
    color: var(--app_color1);
 }
 
+/* About View Css */
+
+.progress
+{
+   height: 30px;
+   margin: 30px;
+}

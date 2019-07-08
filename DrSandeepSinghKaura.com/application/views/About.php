@@ -11,8 +11,8 @@
    <?php include_once('Common/CommonHeaderFiles.php'); ?>
 
    <!-- Include External Css files -->
-   <link href="<?php echo base_url(); ?>/Dependencies/Css/About.css" rel="stylesheet" type="text/css" />
-   <link href="<?php echo base_url(); ?>/Dependencies/Css/Global.css" rel="stylesheet" type="text/css" />
+   <link href="<?php echo base_url(); ?>Dependencies/Css/Main.css" rel="stylesheet" type="text/css" />
+   <link href="<?php echo base_url(); ?>Dependencies/Css/Global.css" rel="stylesheet" type="text/css" />
 
 </head>
 <body>
