@@ -9,3 +9,6 @@
 
 <!-- Include Ionicons -->
 <script src="https://unpkg.com/ionicons@4.5.10-1/dist/ionicons.js"></script>
+
+<!-- Masonry -->
+<!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> -->

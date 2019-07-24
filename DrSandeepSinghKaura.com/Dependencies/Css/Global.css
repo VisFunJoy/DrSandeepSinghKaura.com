@@ -114,3 +114,8 @@
 {
    border: 1px solid var(--app_color5);
 }
+
+.info h4
+{
+   text-align: center;
+}

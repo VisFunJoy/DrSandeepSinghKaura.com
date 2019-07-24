@@ -1,6 +1,6 @@
 <div style = "margin-left:0px; margin-right:0px;" class = "footer row">
-   <div class = "about col-xs-12 col-sm-12 col-md-6 col-lg-6">
-      <h4 style = "color : #FCCD04;"><u>About</u></h4>
+   <div class = "info col-xs-12 col-sm-12 col-md-6 col-lg-6">
+      <h4 style = "color : #FCCD04;"><u>Info</u></h4>
       <p>Dr. Sandeep Singh Kaura has more than 20 years of experience in Reputed
 Educational Institutions and Industry in India in varied verticals like Organisational
 Development, Strategising new business ventures, enhancing Corporate Interface,
@@ -17,9 +17,9 @@ Harvard University for Disaster Management.</p>
       <h4><u>Quick Links</u></h4>
       <ul>
          <li><a href="<?php echo site_url(); ?>/Main/about/">About</a></li>
-         <li><a href="<?php echo site_url(); ?>/Main/index/">Blog</a></li>
-         <li><a href="<?php echo site_url(); ?>/Main/index/">Gallery</a></li>
-         <li><a href="<?php echo site_url(); ?>/Main/index/">Contact</a></li>
+         <li><a href="<?php echo site_url(); ?>/Main/news/">News</a></li>
+         <li><a href="<?php echo site_url(); ?>/Main/gallery/">Gallery</a></li>
+         <li><a href="<?php echo site_url(); ?>/Main/contact/">Contact</a></li>
       </ul>
    </div>
    <br>

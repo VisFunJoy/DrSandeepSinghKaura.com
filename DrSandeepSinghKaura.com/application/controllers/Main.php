@@ -29,5 +29,41 @@ class Main extends CI_Controller {
 	{
       $data = array();
 		$this->load->view('About', $data);
+   }
+   
+   public function news()
+	{
+      $data = array();
+		$this->load->view('News', $data);
+   }
+
+   public function blog()
+	{
+      $data = array();
+		$this->load->view('Blog', $data);
+   }
+
+   public function contact()
+	{
+      $data = array();
+		$this->load->view('Contact', $data);
+   }
+   
+   public function gallery()
+	{
+      $data = array();
+		$this->load->view('Gallery', $data);
+   }
+   
+   public function role_MD()
+	{
+      $data = array();
+		$this->load->view('RoleMD', $data);
+   }
+   
+   public function role_Advisor()
+	{
+      $data = array();
+		$this->load->view('RoleAdvisor', $data);
 	}
 }

@@ -16,24 +16,22 @@
           Roles
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="<?php echo site_url(); ?>/Main/index/">Role 1</a>
+          <a class="dropdown-item" href="<?php echo site_url(); ?>/Main/role_advisor/">Advisor (Skill developement)</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="<?php echo site_url(); ?>/Main/index/">Role 2</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="<?php echo site_url(); ?>/Main/index/">Role 3</a>
+          <a class="dropdown-item" href="<?php echo site_url(); ?>/Main/role_MD/">Managing Director (Rayat-Bahra)</a>
         </div>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="<?php echo site_url(); ?>/Main/about/">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="<?php echo site_url(); ?>/Main/index/">News</a>
+        <a class="nav-link" href="<?php echo site_url(); ?>/Main/news/">News</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="<?php echo site_url(); ?>/Main/index/">Gallery</a>
+        <a class="nav-link" href="<?php echo site_url(); ?>/Main/gallery/">Gallery</a>
       </li>
       <li class="nav-item">
-        <a style = "border-right:none;" class="nav-link" href="<?php echo site_url(); ?>/Main/index/">Contact</a>
+        <a style = "border-right:none;" class="nav-link" href="<?php echo site_url(); ?>/Main/contact/">Contact</a>
       </li>
     </ul>
     <!-- <form class="form-inline my-2 my-lg-0">
