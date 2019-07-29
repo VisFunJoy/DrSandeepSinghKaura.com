@@ -19,9 +19,15 @@ class Main extends CI_Controller {
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
 
+   public function __construct() 
+   {
+      parent:: __construct();
+      $this->load->model("MainModel");
+   }
+
 	public function index()
 	{
-      $data = array();
+      $data["top_5_news"] = $this->MainModel->get_top_5_news();
 		$this->load->view('Home', $data);
    }
    
@@ -33,7 +39,37 @@ class Main extends CI_Controller {
    
    public function news()
 	{
+      $config = array();
+      $config["base_url"] = base_url() . "index.php/Main/news";
+      $config["total_rows"] = $this->MainModel->get_total_news();
+      $config["per_page"] = 5; 
+
+      /* Design pagination */
+      $config['full_tag_open'] = "<ul class='pagination'>";
+      $config['full_tag_close'] = '</ul>';
+      $config['num_tag_open'] = '<li>';
+      $config['num_tag_close'] = '</li>';
+      $config['cur_tag_open'] = '<li class="active"><a href="#">';
+      $config['cur_tag_close'] = '</a></li>';
+      $config['prev_tag_open'] = '<li>';
+      $config['prev_tag_close'] = '</li>';
+      $config['first_tag_open'] = '<li>';
+      $config['first_tag_close'] = '</li>';
+      $config['last_tag_open'] = '<li>';
+      $config['last_tag_close'] = '</li>';
+
+      $config['next_link'] = '<ion-icon name="fastforward"></ion-icon>';
+
+      $config['prev_link'] = '<ion-icon name="rewind"></ion-icon>';
+
+      $this->pagination->initialize($config);
+
+      $page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
+
       $data = array();
+      $data["all_news_for_particular_page"] = $this->MainModel->get_news_for_particular_page($config["per_page"], $page);
+      $data["links"] = $this->pagination->create_links();
+
 		$this->load->view('News', $data);
    }
 

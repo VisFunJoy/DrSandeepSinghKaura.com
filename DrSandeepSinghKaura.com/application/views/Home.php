@@ -51,16 +51,29 @@
 
 <!-- News Section -->
 
-<div class = "news-section">
-   <h2 style = "margin:30px;">Latest News</h2>
-   <div class = "single-news">
-      <a href="">
-         <img style = "display:inline-block;" height = "150px" width = "150px" src='<?php echo base_url(); ?>Dependencies/Images/SandeepKauraPictures/sskaura1.jpg' alt="News-image">
-         <div style = "display:inline-block; vertical-align:top; margin-left:20px;">
-            <h4 style = "border-bottom:2px solid #FCCD04;">News Heading</h4>
-            <p>This is the news.</p>
+<div class = "news-section-home">
+   <h2 style = "border-bottom: 2px solid #FCCD04; margin:30px; text-align:center;">Latest News</h2>
+   <?php if ($top_5_news == false): ?>
+      <div style = "text-align:center;margin: 40px;">
+         <h4  style = "color: gray;">
+            Sorry, No news yet.......
+         </h4>
+      </div>
+   <?php else: ?>
+      <?php foreach($top_5_news as $single_news): ?>
+         <div class = "single-news-home">
+            <img style = "display:inline-block;" height = "150px" width = "150px" src='<?php echo $single_news["image"] ?>' alt="News-image">
+            <div style = "display:inline-block; vertical-align:top; margin-left:20px;">
+               <h4 style = "border-bottom:2px solid #FCCD04;color: #A64AC9;"><?php echo $single_news["title"]; ?></h4>
+               (<?php echo date('d/m/Y H:i:s', $single_news['posted_on']); ?>)
+               <p style = "color:gray;"><?php echo $single_news["description"]; ?></p>
+            </div>
          </div>
-      </a>
+      <?php endforeach; ?>
+   <?php endif; ?>
+
+   <div style = "padding: 30px;">
+      <a style = "color: #17E9E0; font-size:25px;" href="<?php echo site_url(); ?>/Main/news/">View all news...</a></div>
    </div>
 </div>
 

@@ -10,5 +10,8 @@
 <!-- Include Ionicons -->
 <script src="https://unpkg.com/ionicons@4.5.10-1/dist/ionicons.js"></script>
 
+<!-- Include Font Awesome -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
 <!-- Masonry -->
 <!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> -->

@@ -30,17 +30,40 @@
       <li class="breadcrumb-item active" aria-current="page">News</li>
    </ol>
 </nav>
-   
+
 <div class = "container">
-   <div class = "row">
-      <div class = "col-md-8 col-lg-8">
-
+   <?php if ($all_news_for_particular_page == false): ?>
+      <div style = "text-align:center;margin: 40px;">
+         <h4  style = "color: gray;">
+            Sorry, No news yet.......
+         </h4>
       </div>
-      <div class = "col-md-4 col-lg-4">
-
-      </div>
-   </div>
+   <?php else: ?>
+      <?php foreach($all_news_for_particular_page as $single_news): ?>
+            <div class = "single-news">
+               <div class = "row">
+                  <div style = "text-align:center;" class = "col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                     <h3 style = "border-bottom:2px solid #FCCD04;color: #A64AC9;text-align:center; margin-bottom: 30px;">
+                        <?php echo $single_news['title'] ?>
+                     </h3>
+                     <div style = "color: gray; margin : 20px;">
+                        <b>Posted On : </b><?php echo date('d/m/Y H:i:s', $single_news['posted_on']); ?>
+                     </div>
+                     <img width = "350" height= "200" src="<?php echo $single_news["image"]; ?>" alt="News Image">
+                  </div>
+                  <div style = "padding : 30px;" class = "col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                     <p>
+                        <?php echo $single_news['description'] ?>
+                     </p>
+                  </div>
+               </div>
+            </div>
+      <?php endforeach; ?>
+   <?php endif; ?>
 </div>
+
+<?php echo $links; ?>
+
 <!-- Footer -->
 <?php include_once('Common/Footer.php'); ?>
 

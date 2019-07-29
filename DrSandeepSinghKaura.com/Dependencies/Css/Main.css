@@ -1,7 +1,6 @@
 @import "Global.css";
 
 /* Main View Css */
-
 .carousel-inner
 {
     width: 70%;
@@ -26,27 +25,45 @@
    margin-top: 12%;
 }
 
-.news-section
+.news-section-home
 {
-   border-top: 4px solid var(--app_color2);
+   /* border-top: 4px solid var(--app_color2); */
    border-bottom: 4px solid var(--app_color2);
 }
 
-.single-news
+.single-news-home
 {
    /* border: 2px solid var(--app_color1); */
    margin: 30px;
 }
 
-.single-news a
+.single-news-home a
 {
    color: var(--app_color1);
 }
 
 /* About View Css */
-
 .progress
 {
    height: 30px;
    margin: 30px;
+}
+
+/* News */
+.single-news
+{
+   padding: 20px;
+}
+
+.pagination
+{
+   padding-left:100px;
+   background-color: var(--app_color2);
+}
+
+.pagination li, .pagination a
+{
+   margin: 20px;
+   font-size: 20px;
+   color: var(--app_color1);
 }
