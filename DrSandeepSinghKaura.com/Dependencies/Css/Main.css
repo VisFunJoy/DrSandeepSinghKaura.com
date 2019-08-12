@@ -67,3 +67,37 @@
    font-size: 20px;
    color: var(--app_color1);
 }
+
+/* Gallery */
+.img-container:hover a .gallery-image 
+{
+   opacity: 0.3;
+}
+ 
+.img-container:hover .img-overlay 
+{
+   opacity: 1;
+}
+ 
+.img-overlay 
+{
+   transition: .5s ease;
+   opacity: 0;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   text-align: center;
+}
+
+.left-section-role
+{
+   text-align: center;
+   font-size: 30px;
+   color: var(--app_color1);
+   background-color: var(--app_color2);
+   height: 100%;
+   padding: 0px 0px;
+   margin: 0px 0px;
+}

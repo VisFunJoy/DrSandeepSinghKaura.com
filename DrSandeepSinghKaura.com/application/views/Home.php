@@ -20,6 +20,10 @@
 <!-- Include Navbar -->
 <?php include_once('Common/Navbar.php'); ?>
 
+<marquee style = "border-bottom: 1px solid #FCCD04;color:#A64AC9; font-size:30px; margin-top:30px;" width="100%" direction="left">
+   <?php echo $message_from_mr_kaura; ?>
+</marquee>
+
 <!-- Carousel -->
 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">

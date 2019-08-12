@@ -27,18 +27,18 @@ Harvard University for Disaster Management.</p>
    <div style = "color: #FCCD04;" class = "col-xs-12 col-sm-12 col-md-6 col-lg-6">
       © 2019. All Rights Reserved by SSKaura.com | 
       <br>
-      <div style = "margin-top:20px;" >
+      <!-- <div style = "margin-top:20px;" >
          Website developed by : funjoy.org.in
          <img width = "30px" height = "30px" src="<?php echo base_url(); ?>Dependencies/Images/AppImages/main_logo_square.jpg" alt="facebook">
-      </div>
+      </div> -->
       
    </div>
    <div class = "social-links col-xs-12 col-sm-12 col-md-6 col-lg-6">
-      <a data-toggle="tooltip" data-placement="top" title="Facebook" href="<?php echo site_url(); ?>/Main/index/">
+      <a data-toggle="tooltip" target = "_blank" data-placement="top" title="Facebook" href="https://www.facebook.com/sskaura1/?modal=admin_todo_tour">
          <img class = "social-icon" src="<?php echo base_url(); ?>Dependencies/Images/AppImages/facebook_icon.png" alt="facebook">
       </a>
-      <a data-toggle="tooltip" data-placement="top" title="Twitter" href="<?php echo site_url(); ?>/Main/index/">
-         <img class = "social-icon" src="<?php echo base_url(); ?>Dependencies/Images/AppImages/twitter_icon.png" alt="twitter">
+      <a data-toggle="tooltip" target = "_blank" data-placement="top" title="Twitter" href="https://www.linkedin.com/in/dr-sandeep-singh-kaura-105b4015/">
+         <img class = "social-icon" src="<?php echo base_url(); ?>Dependencies/Images/AppImages/linkedin_icon.png" alt="twitter">
       </a>
    </div>
 </div>

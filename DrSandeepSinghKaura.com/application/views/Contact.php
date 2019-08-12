@@ -2,7 +2,7 @@
    defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style = "background-color: white;">
 <head>
 	<meta charset="utf-8">
 	<title>SSKaura.com | Contact</title>
@@ -15,7 +15,7 @@
    <link href="<?php echo base_url(); ?>Dependencies/Css/Global.css" rel="stylesheet" type="text/css" />
 
 </head>
-<body>
+<body style = "background-color: white;">
 
 <!-- Include Navbar -->
 <?php include_once('Common/Navbar.php'); ?>
@@ -31,11 +31,56 @@
    </ol>
 </nav>
    
-<div class = "container">
+<div style = " text-align:center;">
+   <?php if (isset($message)): ?>
+      <h4 style = "color:#17E9E0;"><?php echo $message; ?></h4>
+   <?php endif; ?>
+</div>
+<div style = "margin-top:50px;" class = "container">
    <div class = "row">
-
+      <div class = "col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+         <h4 style = "color:gray;">For any query, please drop a message here....</h4>
+         <form class = "row" action="<?php echo site_url(); ?>/Main/send_contact_message" method = "Post">
+            <div style = "text-align:center;" class = "col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+               <input required autocomplete="off" class = "input-box" style = "margin:10px auto;" placeholder = "Enter your name" type="text" name="name"><br>
+               <input required autocomplete="off" class = "input-box" style = "margin:10px auto;" placeholder = "Enter your email address" type="email" name="email"><br>
+               <input required autocomplete="off" class = "input-box" style = "margin:10px auto;" placeholder = "Enter your subject" type="text" name="subject"><br>
+            </div>
+            <div style = "text-align:center;" class = "col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+               <textarea required autocomplete="off" class = "input-box" style = "margin:10px auto; height: 220px;" 
+               type="text" name="message" rows = "20" cols = "50">Message goes here...</textarea>
+            </div>
+            <div style = "text-align:center;" class = "col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+               <button class = "button" type="submit">Send Message</button>
+            </div>
+         </form>
+      </div>
+      <div style = "padding-top:45px;" class = "col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+         <div class= "row" style = "margin:20px;">
+            <ion-icon style = "color:#17E9E0;margin-right:10px;" name="home" size="large"></ion-icon>
+            <h6>
+               Room No. 507, 5th floor, Plot No. 1,<br>
+               Directorate of technical education, <br>Sector 36-A, Chandigarh - 160036 
+            </h6>
+         </div>
+         <hr>
+         <div class= "row" style = "margin:20px;">
+            <ion-icon style = "color:#17E9E0; margin-right:10px;" name="call" size="large"></ion-icon>
+            <h6>
+               +91-172-5022383
+            </h6>
+         </div>
+         <hr>
+         <div class= "row" style = "margin:20px;">
+            <ion-icon style = "color:#17E9E0; margin-right:10px;" name="mail" size="large"></ion-icon>
+            <h6>
+               sandeepsingh.kaura@punjab.gov.in
+            </h6>
+         </div>
+      </div>
    </div>
 </div>
+
 <!-- Footer -->
 <?php include_once('Common/Footer.php'); ?>
 

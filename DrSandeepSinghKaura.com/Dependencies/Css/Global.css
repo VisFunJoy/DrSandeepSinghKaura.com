@@ -79,13 +79,13 @@
 
 .social-links a img
 {
-   width: 25px;
-   height: 25px;
+   width: 35px;
+   height: 35px;
 }
 
 .social-links a
 {
-   margin: 5px;
+   margin: 10px;
 }
 
 .heading
@@ -118,4 +118,34 @@
 .info h4
 {
    text-align: center;
+}
+
+.input-box
+{
+   width: 300px;
+   height: 60px;
+   line-height: 40px;
+   border: 1px solid var(--app_color5);
+   text-decoration: none;
+   padding: 10px;
+}
+
+.input-box:focus
+{
+   border: 1px solid var(--app_color5);
+   text-decoration: none;
+   outline: none;
+}
+
+.button
+{
+   text-decoration: none;
+   border: none;
+   background-color: var(--app_color5);
+   color: #FFFFFF;
+   margin: 30px auto;
+   width: 250px;
+   height: 40px;
+   line-height: 40px;
+   font-size: 20px;
 }

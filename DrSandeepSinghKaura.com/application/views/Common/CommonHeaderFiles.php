@@ -15,3 +15,13 @@
 
 <!-- Masonry -->
 <!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> -->
+
+<!-- Magnific Popup Master -->
+<!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="<?=base_url()?>/Dependencies/MagnificPopupMaster/magnific-popup.css">
+
+<!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<!-- Magnific Popup core JS file -->
+<script src="<?=base_url()?>/Dependencies/MagnificPopupMaster/jquery.magnific-popup.min.js"></script>

@@ -27,6 +27,7 @@ class Main extends CI_Controller {
 
 	public function index()
 	{
+      $data["message_from_mr_kaura"] = $this->MainModel->get_message_from_mr_kaura();
       $data["top_5_news"] = $this->MainModel->get_top_5_news();
 		$this->load->view('Home', $data);
    }
@@ -101,5 +102,33 @@ class Main extends CI_Controller {
 	{
       $data = array();
 		$this->load->view('RoleAdvisor', $data);
-	}
+   }
+   
+   public function send_contact_message()
+   {      
+      $name = $this->input->post('name');
+      $email = $this->input->post('email');
+      $subject = $this->input->post('subject');
+      $message = $this->input->post('message');
+
+      $parameters = array(
+         'name'             => $name,
+         'email_address'    => $email,
+         'subject'          => $subject,
+         'message'          => $message
+      );
+
+      $add_contact_message = $this->MainModel->add_contact_message($parameters);
+
+      if ($add_contact_message == true)
+      {
+         $data['message'] = 'Your message was sent successfully.';
+         $this->load->view('Contact', $data);
+      }
+      else
+      {
+         $data['message'] = 'Database error while adding sending message, please try again.';
+         $this->load->view('Contact', $data);
+      }
+   }
 }
