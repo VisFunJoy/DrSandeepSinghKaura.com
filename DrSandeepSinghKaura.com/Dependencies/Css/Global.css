@@ -1,47 +1,47 @@
 :root {
-   --app_color1: #A64AC9;
-   --app_color2: #FCCD04;
-   --app_color3: #FFB48F;
-   --app_color4: #F5E6CC;
-   --app_color5: #17E9E0;
+   --app_color1: #5680E9;
+   --app_color2: #84CEEB;
+   --app_color3: #5AB9EA;
+   --app_color4: #C1C8E4;
+   --app_color5: #8860D0;
  }
  html, body
  {
     height: 100%;
-    background-color: var(--app_color4);
+    background-color: white;
  }
 
  .footer
  {
-    background-color: var(--app_color1);
+    background-color: lightgoldenrodyellow;
     padding: 30px;
     color: var(--app_color5);
  }
 
  .navbar-light .navbar-brand
 {
-   color: var(--app_color3) !important;
+   color: var(--app_color5) !important;
 }
 .nav-item .nav-link
 {
-   color: var(--app_color4) !important;
-   border-right: 2px solid var(--app_color2);
+   color: var(--app_color5) !important;
+   border-right: 2px solid lightgoldenrodyellow;
    font-size: 18px;
 }
 
 .nav-item .nav-link:hover
 {
-   color: var(--app_color2) !important;
+   color: lightgoldenrodyellow !important;
 }
 
 .dropdown-menu
 {
-   background-color: var(--app_color2);
+   background-color: var(--app_color1);
 }
 
 .dropdown-menu .dropdown-item
 {
-   color: var(--app_color1) !important;
+   color: var(--app_color5) !important;
 }
 
 .search-button

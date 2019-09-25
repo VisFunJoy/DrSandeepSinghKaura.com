@@ -72,7 +72,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 if (ENVIRONMENT == 'staging')
 {
-   $active_group = 'default';
+   $active_group = 'qwertyuioplkjhgf';
 }
 else if (ENVIRONMENT == 'development')
 {

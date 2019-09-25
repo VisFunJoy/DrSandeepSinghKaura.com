@@ -74,6 +74,42 @@ class Main extends CI_Controller {
 		$this->load->view('News', $data);
    }
 
+   public function events()
+	{
+      $config = array();
+      $config["base_url"] = base_url() . "index.php/Main/events";
+      $config["total_rows"] = $this->MainModel->get_total_events();
+      $config["per_page"] = 5; 
+
+      /* Design pagination */
+      $config['full_tag_open'] = "<ul class='pagination'>";
+      $config['full_tag_close'] = '</ul>';
+      $config['num_tag_open'] = '<li>';
+      $config['num_tag_close'] = '</li>';
+      $config['cur_tag_open'] = '<li class="active"><a href="#">';
+      $config['cur_tag_close'] = '</a></li>';
+      $config['prev_tag_open'] = '<li>';
+      $config['prev_tag_close'] = '</li>';
+      $config['first_tag_open'] = '<li>';
+      $config['first_tag_close'] = '</li>';
+      $config['last_tag_open'] = '<li>';
+      $config['last_tag_close'] = '</li>';
+
+      $config['next_link'] = '<ion-icon name="fastforward"></ion-icon>';
+
+      $config['prev_link'] = '<ion-icon name="rewind"></ion-icon>';
+
+      $this->pagination->initialize($config);
+
+      $page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
+
+      $data = array();
+      $data["all_events_for_particular_page"] = $this->MainModel->get_events_for_particular_page($config["per_page"], $page);
+      $data["links"] = $this->pagination->create_links();
+
+		$this->load->view('Events', $data);
+   }
+
    public function blog()
 	{
       $data = array();

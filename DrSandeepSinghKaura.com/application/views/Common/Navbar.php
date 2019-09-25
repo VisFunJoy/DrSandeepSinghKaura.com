@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #A64AC9;">
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #84CEEB;">
   <a class="navbar-brand" href="<?php echo site_url(); ?>/Main/index/">Dr Sandeep Singh Kaura
-      <img width = "80px" height = "50px" src="<?php echo base_url(); ?>Dependencies/Images/SandeepKauraPictures/sskaura25.jpg" alt="...">
+      <img width = "80px" height = "50px" src="<?php echo base_url(); ?>Dependencies/Images/SandeepKauraPictures/sskaura53.jpg" alt="...">
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -11,7 +11,7 @@
       <li class="nav-item active">
         <a class="nav-link" href="<?php echo site_url(); ?>/Main/index/">Home <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item dropdown">
+     <!--  <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="<?php echo site_url(); ?>/Main/index/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Roles
         </a>
@@ -20,12 +20,15 @@
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="<?php echo site_url(); ?>/Main/role_MD/">Managing Director (Rayat-Bahra)</a>
         </div>
-      </li>
+      </li> -->
       <li class="nav-item">
         <a class="nav-link" href="<?php echo site_url(); ?>/Main/about/">About</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="<?php echo site_url(); ?>/Main/news/">News</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<?php echo site_url(); ?>/Main/events/">Events</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="<?php echo site_url(); ?>/Main/gallery/">Gallery</a>

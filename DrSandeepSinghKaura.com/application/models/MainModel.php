@@ -25,6 +25,29 @@
          return false;
       }
 
+      public function get_total_events()
+      {
+         return $this->db->count_all("events");
+      }
+
+      public function get_events_for_particular_page($per_page, $page)
+      {
+         $query = $this->db->limit($per_page, $page)
+                           ->order_by('posted_on' , 'desc');
+                           
+         $action = $query->get("events");
+ 
+         if ($action->num_rows() > 0) 
+         {
+             foreach ($action->result_array() as $row) 
+             {
+                 $data[] = $row;
+             }
+             return $data;
+         }
+         return false;
+      }
+
       public function get_message_from_mr_kaura()
       {
          $query = $this->db->limit(1)

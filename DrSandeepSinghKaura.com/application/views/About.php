@@ -34,56 +34,66 @@
 
 <div class = "container">
    <div class = "row">
+      <h4 style = "margin-left:auto; margin-right:auto;" class = "sub-heading">Introduction</h4>
+   </div>
+   <div class = "row">
       <div class = "col-xs-12 col-sm-12 col-md-6 col-lg-6">
          <img style = "margin : 20px 0px;" height = "400px" src="<?php echo base_url(); ?>Dependencies/Images/SandeepKauraPictures/sskaura48.jpg" class="d-block w-100" alt="...">
       </div>
-      <div class = "col-xs-12 col-sm-12 col-md-6 col-lg-6">
-         <h4 class = "sub-heading">Introduction</h4>
+      <div class = "col-xs-12 col-sm-12 col-md-6 col-lg-6" style = "margin-top:20px;">
          <p>
-            Dr. Sandeep Singh Kaura has more than 20 years of experience in Reputed
-      Educational Institutions and Industry in India in varied verticals like Organisational
-      Development, Strategising new business ventures, enhancing Corporate Interface,
-      Project Planning & Implementation and Foreign Relations. Dr Kaura also worked as
-      Director of Punjab State Industrial Development Corporation (PSIDC) Chandigarh
-      and is an active member of organisations such as PHD Chamber of commerce
-      representing its national committees for promotion of Industrial Development and
-      Skill Development in India, Confederation of Indian Industry (CII) for its initiatives on
-      Skill Development in India, Punjab State Board for Technical Education! Society of
-      Indian Automobile Manufacturers (SIAM) New Delhi and Member of council of
-      Harvard University for Disaster Management.
+         A thorough professional with 20 years of rich experience in the field of Skill Development and Technical Education bringing innovations in his profession and many ' Firsts' to his credit during his career while holding key management positions at State and National level in Govt & Private Sector , Dr Sandeep Singh Kaura is a Management Graduate , Doctorate and did Fellowship from University of Oxford .
+
+         Dr Kaura is working as Adviser ( Skill Development Mission ) Govt of Punjab since October 2015. 
+
+         He has exhibited his leadership skills by setting up of strong Skills Eco-system in Punjab with 300 Skill Development Centres Comprises of Five Multi Skill Development Centres, Three Health Skill Development Centres, Two CSR based Industry owned Skill Centres ,Ninety Urban Skill Centres and Two Hundreds Rural Skill Centres with the capacity to train One Lac youth annually on industry oriented skills . A Unique International Skill Development Centre is being set up in association with British High Commission and Govt of Alberta Canada to provide skill training to the youth of Punjab by overseas agencies with focus to provide Employment in UK , Australia , Canada , GCG countries etc. 
          </p>
+      </div>
+   </div>
+   <div class = "row">
+      <div class = "col-xs-12 col-sm-12 col-md-6 col-lg-6" style = "margin-top:60px;">
+         <p>
+            His achievements while working with Rayat-Bahra Group of Universities and Colleges Chandigarh, as Managing Director are very exemplary. Under his esteemed leadership, Rayat-Bahra Group has experienced a phenomenal & competent change by touching the zenith of success in developing itself towards an International Hub of education with spread of seven campuses in India having 35000 students .
+
+            He has been actively involved in the areas of Youth career development, Counselling , Training & Placements . He has organized various high profile events in the field of Mass Recruitments through National and International Job fairs.
+
+            He is passionate to build an Eco system to meet the global skill shortages which is going to be major challenge in future as global population is getting aged and need is for young people to maintain the level of economic development at international level .
+         </p>
+      </div>
+      <div class = "col-xs-12 col-sm-12 col-md-6 col-lg-6">
+         <img style = "margin : 20px 0px;" height = "400px" src="<?php echo base_url(); ?>Dependencies/Images/SandeepKauraPictures/sskaura52.jpg" class="d-block w-100" alt="...">
       </div>
    </div>
    <div class = "skills-expertise">
       <h4 class = "sub-heading">Skills, Subjects and Techniques Expertise</h4>
       <div class = "row">
          <div class = "col-xs-12 col-sm-12 col-md-6 col-lg-6">
-            <h6>Organisational Development (72%)</h6>
+            <h6>Organisational Development</h6>
             <div class="progress">
-               <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 72%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+               <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 92%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
-            <h6>Strategising New Business ventures (78%)</h6>
+            <h6>Strategising New Business ventures</h6>
             <div class="progress">
-               <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 78%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+               <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 98%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
-            <h6>Enhancing Corporate Interface (75%)</h6>
+            <h6>Enhancing Corporate Interface</h6>
             <div class="progress">
-               <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+               <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 95%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
          </div>
          <div class = "col-xs-12 col-sm-12 col-md-6 col-lg-6">
-            <h6>Project Planning (87%)</h6>
+            <h6>Project Planning</h6>
             <div class="progress">
-               <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 87%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+               <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 97%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
-            <h6>Implementation and Foreign Relations (82%)</h6>
+            <h6>Implementation and Foreign Relations</h6>
             <div class="progress">
-               <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 82%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+               <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 92%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
          </div>
       </div>
    </div>
-   <div style = "margin-bottom :30px;" class = "my-qualifications">
+  <!--  <div style = "margin-bottom :30px;" class = "my-qualifications">
       <h4 class = "sub-heading">My Qualifications</h4>
       <div class = "row">
          <div class = "col-xs-12 col-sm-12 col-md-6 col-lg-6">
@@ -131,7 +141,7 @@
               class = "col-xs-12 col-sm-12 col-md-6 col-lg-6">
             <ion-icon class = "d-none d-md-block" size="large" name="snow"></ion-icon>         
          </div>
-      </div>
+      </div> -->
    </div>
 </div>
 <!-- Footer -->

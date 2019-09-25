@@ -56,6 +56,22 @@
          </form>
       </div>
       <div style = "padding-top:45px;" class = "col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+         <div class = "row" style = "margin-bottom:40px; text-align:center;">
+            <div class = "social-links" style = "margin-left:auto; margin-right:auto;">
+               <a data-toggle="tooltip" target = "_blank" data-placement="top" title="Facebook" href="https://www.facebook.com/sskaura1/?modal=admin_todo_tour">
+                  <img class = "social-icon" src="<?php echo base_url(); ?>Dependencies/Images/AppImages/facebook_icon.png" alt="facebook">
+               </a>
+               <a data-toggle="tooltip" target = "_blank" data-placement="top" title="Linkedin" href="https://www.linkedin.com/in/dr-sandeep-singh-kaura-105b4015/">
+                  <img class = "social-icon" src="<?php echo base_url(); ?>Dependencies/Images/AppImages/linkedin_icon.png" alt="linkedin">
+               </a>
+               <a data-toggle="tooltip" target = "_blank" data-placement="top" title="Twitter" href="https://www.twitter.com/kaurass">
+                  <img class = "social-icon" src="<?php echo base_url(); ?>Dependencies/Images/AppImages/twitter_icon.png" alt="twitter">
+               </a>
+               <a data-toggle="tooltip" target = "_blank" data-placement="top" title="Youtube" href="https://www.youtube.com/user/sandeepkaura">
+                  <img class = "social-icon" src="<?php echo base_url(); ?>Dependencies/Images/AppImages/youtube-red-square.png" alt="youtube">
+               </a>
+            </div>
+         </div>
          <div class= "row" style = "margin:20px;">
             <ion-icon style = "color:#17E9E0;margin-right:10px;" name="home" size="large"></ion-icon>
             <h6>
